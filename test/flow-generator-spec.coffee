@@ -60,6 +60,7 @@ describe 'FlowGenerator', ->
         @sut.addNode type: 'hue'
         @sut.addNode type: 'trigger'
         @sut.linkNodes 0, 1
+
         @flowInJSON = @sut.toJSON()
 
       it 'should return a JSON string containing specified nodes', ->
